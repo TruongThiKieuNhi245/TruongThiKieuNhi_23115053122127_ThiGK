@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background_color">
 
     <TextView
         android:layout_width="match_parent"
@@ -25,8 +24,70 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:textColor="@color/text_color"
+        android:layout_marginTop="15dp"
+        />
 
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhâp tên của bạn"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="16sp"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhâp email của bạn"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại"
+        android:textSize="16sp"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhâp số điện thoại"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@color/text_color"
         android:layout_marginBottom="30dp"
         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Tiếp theo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
