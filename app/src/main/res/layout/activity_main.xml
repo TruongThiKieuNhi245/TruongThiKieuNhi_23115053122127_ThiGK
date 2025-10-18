@@ -8,12 +8,25 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Nhập thông tin cá nhân"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+
+        android:layout_marginBottom="30dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
